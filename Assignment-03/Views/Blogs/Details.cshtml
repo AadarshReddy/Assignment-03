@@ -1,0 +1,50 @@
+﻿@model Assignment_03.Models.Blogs
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Blogs</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BContent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BContent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BAuthor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BAuthor)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
